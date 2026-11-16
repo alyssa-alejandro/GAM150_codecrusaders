@@ -1,124 +1,106 @@
----------------------------------------------------------------------------
-VV     VV  II  RRRRRR     AAAA    LL 
- V     V   II  RR   RR   AA  AA   LL
- VV   VV   II  RRRRRR   AA    AA  LL
-  V   V    II  RR  RR   AAAAAAAA  LL
-  VV VV    II  RR   RR  AA    AA  LL
-   VVV     II  RR    R  AA    AA  LLLLL
+# Viral Invaders
 
+**A Reverse Tower Defense Game**
 
-II  NNN    NN  VV     VV    AAAA    DDDDDD    EEEEEE  RRRRRR    SSSSS
-II  NN NN  NN   V     V    AA  AA   DD   DD   EE      RR   RR  SS
-II  NN  N  NN   VV   VV   AA    AA  DD    DD  EEEEE   RRRRRR    SSSSS
-II  NN  NN NN    V   V    AAAAAAAA  DD    DD  EE      RR  RR        SS
-II  NN   NNNN    VV VV    AA    AA  DD   DD   EE      RR   RR        S
-II  NN    NNN     VVV     AA    AA  DDDDDD    EEEEEE  RR    R   SSSSS
----------------------------------------------------------------------------
+Developed by **Code Crusaders**  
+DigiPen Institute of Technology Singapore  
+**Module:** CSD1451 | Spring 2025
 
+---
 
-=================================================================================
- S U M M A R Y:
-..............................
+## About the Game
 
- - GAME NAME : 	Viral Invaders
- - TEAM NAME : 	Code Crusaders
- - MODULE : 	CSD1451s25
+**Viral Invaders** is a reverse tower defense game where players take on the role of viruses attempting to overcome the host's immune system and successfully invade the body.
 
- Members:
-  - Dalton Koh			d.koh@digipen.edu
-  - Ethan Ng			n.ethanyongle@digipen.edu
-  - Ang Yu Xuan			yuxuan.ang@digipen.edu
-  - Alyssa Nicole Alejandro	alejandro.a@digipen.edu
-  - Chan Qi Ying		q.chan@digipen.edu
+Command a squad of viruses, each equipped with unique abilities, to defeat white blood cells acting as defensive towers.
 
- All content © 2025 DigiPen Institute of Technology Singapore. All rights reserved.
-=================================================================================
+**Can you conquer the body?**
 
-=================================================================================
- H O W   T O   P L A Y:
-..............................
+## How to Play
 
- Viral Invaders is a reverse Tower Defense game, giving players the role of viruses
- to overcome the host's immune system and successfully invade the body. Command a 
- squad of viruses, each with unique abilities, to defeat white blood cells acting as 
- defense towers! Can you conquer the body?
+Players strategically deploy viruses to overcome the host's defenses.
 
-=================================================================================
+1. Select a virus using the **Left Mouse Button**.
+2. Click on a **green spawn point** to deploy the selected virus.
+3. Use different viruses and their unique abilities to defeat the white blood cells.
+4. Overcome the defenses and successfully complete the level.
 
-=================================================================================
- C O N T R O L S:
-..............................
+## Controls
 
- Left Mouse Button - Click on virus to select, then click on green spawn point to 
-	 	     spawn virus
- P Key 		   - Pause Game
+| Key / Input | Action |
+|---|---|
+| Left Mouse Button | Select a virus |
+| Left Mouse Button on Green Spawn Point | Spawn the selected virus |
+| P | Pause the game |
 
-=================================================================================
+## Debug Controls & Cheat Codes
 
-=================================================================================
- C H E A T   C O D E S:
-..............................
+These controls were implemented for development and testing purposes.
 
- Skip Intro Screen 
- - Right Mouse Button
- - Left Mouse Button
- - Escape Key
- - Enter Key
- - Space Bar 
+| Key / Input | Action |
+|---|---|
+| Right Mouse Button | Skip intro screen |
+| Left Mouse Button | Skip intro screen |
+| Escape | Skip intro screen |
+| Enter | Skip intro screen |
+| Space Bar | Skip intro screen |
+| N | Immediately win the level |
+| Z | Spawn Pipagao for the "pipagao" event |
+| X | Spawn platelets for the "platelets" event |
 
- Immediately win the level
- - N Key
+---
 
- Spawn pipagao for "pipagao" event
- - Z Key
+## Development Team
 
- Spawn platelets for "platelets" event
- - X Key
+**Team Name:** Code Crusaders
 
-=================================================================================
+| Team Member |
+|---|
+| Dalton Koh |
+| Ethan Ng |
+| Ang Yu Xuan |
+| Alyssa Nicole Alejandro |
+| Chan Qi Ying |
 
+## Credits & Acknowledgements
 
-=================================================================================
- C R E D I T S:
-..............................
+### Instructors
 
- Code Crusaders:
- - Dalton Koh
- - Ethan Ng
- - Ang Yu Xuan
- - Alyssa Nicole Alejandro
- - Chan Qi Ying
+- Cheng Ding Xiang
+- Gerald Wong
+- Soroor Malekmohammadi Faradounbeh
+- Tommy Tan
 
- Instructors:
- - Cheng Ding Xiang
- - Gerald Wong
- - Soroor Malekmohammadi Faradounbeh
- - Tommy Tan
+### Institution
 
- Created at:
- - Digipen Institute of Technology Singapore
+**DigiPen Institute of Technology Singapore**
 
- President:
- - Claude Comair
+**President**
+- Claude Comair
 
- Executives:
- - Jason Chu
- - Michele Comair
- - Christopher Comair
- - Alexander Comair
- - Michael Gats
- - Tan Chek Ming
- - Prasanna Kumar Ghali
- - Mandy Wong
- - Johnny Deek
+**Executives**
+- Jason Chu
+- Michele Comair
+- Christopher Comair
+- Alexander Comair
+- Michael Gats
+- Tan Chek Ming
+- Prasanna Kumar Ghali
+- Mandy Wong
+- Johnny Deek
 
-Music:
- - Jingles BY sounddraw.io
+### External Resources
 
- UI Pack
- - kenney_ui - Pack Pixel Adventure
+| Resource | Attribution |
+|---|---|
+| Music / Jingles | sounddraw.io |
+| UI Assets | Kenney UI – Pixel Adventure Pack |
+| Fonts | Kenney Fonts, DigiPen Resources |
 
- Fonts
- - kenney_fonts, Digipen Resources
+---
 
-=================================================================================
+## Copyright
+
+All content © 2025 DigiPen Institute of Technology Singapore. All rights reserved.
+
+Developed as an academic game project at DigiPen Institute of Technology Singapore.
