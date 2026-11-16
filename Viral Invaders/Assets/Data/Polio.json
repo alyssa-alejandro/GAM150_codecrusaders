@@ -1,0 +1,24 @@
+{
+    "polio_virus_initial_spawn_time_interval": 100.0,
+    "polio_virus_initial_generate_time_interval": 150.0,
+    "polio_virus_spawn_time_rate": 25.0,
+    "polio_virus_generate_time_rate": 50.0,
+    "polio_virus_lose_hp_for_spawning": 40.0,
+    "minion_polio_virus_generate_time_rate": 25.0,
+    "minion_polio_virus_initial_generate_time_interval": 200.0,
+
+    "resource_mesh_size": 75.0,
+    "resource_mesh_color": "0xFFFFFF",
+    "resource_mesh_scale": 1.0,
+    "resource_mesh_pos_X": -750.0,
+    "resource_mesh_pos_Y": 400.0,
+    "resource_text_scale": 1.0,
+    "resource_text_X_offset": -0.85,
+    "resource_text_Y_offset": 0.9,
+    "resource_text_RGBA": 1.0
+
+}
+
+
+
+

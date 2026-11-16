@@ -1,0 +1,14 @@
+{
+    "current_Bar_Scale": 1.0,
+    "scale_Left_To_Right": true,
+    "hp_Bar_Width": 50.0,
+    "hp_Bar_Height": 10.0,
+    "off_set_y": 20.0,
+    "grey_background": 4287137928,
+    "red_background": 4294901760,
+    "virus_HP_Index": 20,
+    "index_offset": 20,
+    "cord_x_offset_1": 1.0,
+    "cord_x_offset_2": 0.5,
+    "cord_x_offset_3": 60.0
+  }

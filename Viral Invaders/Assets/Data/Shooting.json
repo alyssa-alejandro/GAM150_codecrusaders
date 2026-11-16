@@ -1,0 +1,14 @@
+{
+    "bullet_size": 1.0,
+    "number_circle_segments": 100,
+    "bullet_RGBA": 1.0,
+    "out_of_array_index": -1,
+    "DOT_damage": 800,
+    "damage_Per_Second_divider": 5.0,
+    "virus_attack_cooldown_CD": 1.5
+
+}
+
+
+
+

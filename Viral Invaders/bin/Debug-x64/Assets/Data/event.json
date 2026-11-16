@@ -1,0 +1,67 @@
+{
+    "reset_coor": -999.0,
+    "sz": 3,
+    "half": 2,
+
+    "radius": 50.0,
+    "v_radius": 40.0,
+    "ppg_color": "0xFF964B00",
+    "segment": 100,
+    "max_time": 5,
+    "spd_multiplier": 2,
+    "rand_modifier": 1,
+    "end": 0.0,
+
+    "platelets_width": 50.0,
+    "platelets_height": 100.0,
+    "hp_width": 100.0,
+    "hp_height": 15.0,
+    "base_health": 100.0,
+    "platelet_color": "0xFFFBEC5D",
+    "bg_color": "0xFF097969",
+    "fg_color": "0xFF50C878",
+    "scale": 1.0,
+    "frame_count1": 20,
+    "frame_count2": 50,
+    "frame_count3": 70,
+    "deplete1": 5,
+    "deplete2": 10,
+    "deplete3": 15,
+
+    "para_active": false,
+    "para_boosted": false,
+    "para_elapsed_time": 0.0,
+    "para_time":  15.0,
+    "PARACETEMOL_DURATION": 10.0,
+    "DAMAGE_MULTIPLIER": 3,
+
+    "vaccine_active": false,
+    "vaccine_boosted": false,
+    "vaccine_elapsed_time": 0.0,
+    "vac_scale_atk_atkspd": 2,
+    "vac_scale_hp": 20,
+    "attack_up": 10,
+    "attackspd_up": 10,
+    "hp_up": 100,
+    "after_time":  5.0,
+
+    "min_interval": 350,
+    "max_interval": 4000,
+    "reset": -10,
+    "countdown": 300,
+    "coll_limit": 2,
+    "row_limit":  1,
+
+    "spritesheets": [
+        "Assets/ppg-ss.png",
+        "Assets/vaccine-ss.png",
+        "Assets/para-ss.png",
+        "Assets/platelets-ss.png"
+    ]
+
+    
+}
+
+
+
+

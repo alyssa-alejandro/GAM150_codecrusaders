@@ -1,0 +1,13 @@
+{
+    "volume_bgm": 1.0,
+    "volume_pitch": 1.0,
+    "current_volume": 1.0,
+    "current_pitch": 1.0,
+    "loop": -1,
+
+    "music": [
+        "Assets/viralinvaders_bgm_main.mp3",
+        "Assets/viralinvaders_bgm.mp3"
+    ]
+
+}

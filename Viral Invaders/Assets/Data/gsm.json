@@ -1,0 +1,5 @@
+{
+    "restart": "Restarting Level: ",
+    "exit": "Exiting Current Level...",
+    "error_init":"Error: GameState_Init is nullptr for state "
+  }

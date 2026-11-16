@@ -1,0 +1,22 @@
+{
+  "screen_width": 200.0,
+  "screen_height": 150.0,
+  "button_y_offset": 50,
+  "button_x_offset": 50,
+  "space": 40.0,
+  "srect_width_scale": 0.2,
+  "srect_height_scale": 0.1,
+  "button_text": [ "Cancel", "Confirm" ],
+  "long_restart_text": "Are you sure you want to restart?",
+  "long_exit_text": "Are you sure you want to exit?",
+  "long_text_height": 0.5,
+  "bg_color": "0xFF00008B",
+  "cancel_color": "0xFF346FC7",
+  "confirm_color": "0xFF346FC7",
+  "scale": 1.0,
+  "text_scale": 0.8,
+  "text_offset_scale": 1.5,
+  "text_offset_y": 10.0,
+  "color": 1.0
+}
+

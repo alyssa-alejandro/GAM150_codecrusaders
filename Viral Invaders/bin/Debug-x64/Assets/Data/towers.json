@@ -1,0 +1,56 @@
+{
+  "tower_color": "0xFFFF0000",
+  "tower_coll_color": "0xFF0000FF",
+  "tower_coor": 5.0,
+  "tower_scale": 2.5,
+  "tower_coll_scale": 1.0,
+
+  "lymp_atk": 10,
+  "lymp_atk_spd": 0.85,
+  "lymp_hp": 100,
+  "lymp_radius": 60.0,
+  "lymp_coll_radius": 150.0,
+
+  "macro_atk": 10,
+  "macro_atk_spd": 5.0,
+  "macro_hp": 150,
+  "macro_radius": 50.0,
+  "macro_coll_radius": 150.0,
+
+  "boss1_atk": 10,
+  "boss1_atk_spd": 5.0,
+  "boss1_hp": 500,
+  "boss1_radius": 100.0,
+  "boss1_coll_radius": 300.0,
+
+  "boss2_atk": 10,
+  "boss2_atk_spd": 5.0,
+  "boss2_hp": 1000,
+  "boss2_radius": 100.0,
+  "boss2_coll_radius": 1000.0,
+
+  "reset_type": -1,
+  "reset_general_int": 0,
+  "reset_general_float": 0.0,
+  "reset_coor": -9999.0,
+
+
+  "time_before_death1": 4,
+  "time_before_death2": 7,
+  "time_before_death3": 10,
+  "time_before_death4": 15,
+  "reset": -1,
+
+  "inv_timer": 0.0,
+  "atk_spd_multiplier": 0.95,
+  "boss1_buff_timer": 10.0,
+  "boss2_revive_timer": 10.0,
+  "boss_inv_duration": 3.0,
+  "boss_state": false,
+  "boss_active_display":0.0,
+  "boss_active_display_time":1.0,
+  "boss_inv_cd": 5.0,
+  "white": 4294967295,
+  "default_offset": 0.0,
+  "boss_width_modifier": 100.0
+}

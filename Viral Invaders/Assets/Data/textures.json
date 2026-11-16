@@ -1,0 +1,48 @@
+{
+    "grid_texture": "Assets/healthybg.png",
+    "path_texture": "Assets/scarybg.png",
+    "spawn": "Assets/spawn.png",
+  
+    "button_def": "Assets/button_default.png",
+    "button_clicked": "Assets/button_clicked.png",
+  
+    "credits_bg": "Assets/BGCREDIT.png",
+    "digipen_logo": "Assets/DGPEN_LOGO.png",
+    "main_Menu_Bg_Texture": "Assets/mmBg.png",
+  
+    "WIN_PAGE_texture": "Assets/WIN_BACKGROUND.png",
+    "LOST_PAGE_texture": "Assets/GAMEOVER_BACKGROUND.png",
+  
+    "Back_Button_Texture": "Assets/Back_c.png",
+    "background_texture": "Assets/MENU.jpg",
+    "arrow": "Assets/arrowright.png",
+    "arrow_2": "Assets/arrowleft.png",
+  
+    "dengue_texture": "Assets/dengue.png",
+    "shingles_texture": "Assets/shingles.png",
+    "chickenpox_texture": "Assets/chickenpox.png",
+    "polio_texture": "Assets/polio.png",
+    "flu_texture": "Assets/flu.png",
+    "hfmd_texture": "Assets/hfmd.png",
+    "ebola_Texture": "Assets/ebola.png",
+  
+    "dna": "Assets/dna.png",
+  
+    "guide_1": "Assets/Guide1.png",
+    "guide_2": "Assets/Guide2.png",
+    "guide_3": "Assets/Guide3.png",
+    "guide_4": "Assets/Guide4.png",
+    "guide_5": "Assets/Guide5.png",
+  
+    "boss_1_t": "Assets/boss1.png",
+    "boss_1_active": "Assets/boss1_active.png",
+    "boss_1_inv": "Assets/boss1inv.png",
+    "boss_2_t": "Assets/boss2.png",
+    "boss_2_inv": "Assets/boss2inv.png",
+    
+    "lymphocyte_Texture": "Assets/lymphocyte.png",
+    "macrophage_Texture": "Assets/macrophage.png",
+  
+    "font": ["Assets/buggy-font.ttf", 24],
+    "k_font": ["Assets/kennyblocks.ttf", 33]
+  }

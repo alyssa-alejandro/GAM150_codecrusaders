@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="circle.cpp" />
+    <ClCompile Include="collision.cpp" />
+    <ClCompile Include="countdown.cpp" />
+    <ClCompile Include="pathing.cpp" />
+    <ClCompile Include="pipagao.cpp" />
+    <ClCompile Include="towers.cpp" />
+    <ClCompile Include="rectangle.cpp" />
+    <ClCompile Include="squaregrid.cpp" />
+    <ClCompile Include="textureselect.cpp" />
+    <ClCompile Include="upgradetree.cpp" />
+    <ClCompile Include="healthbar.cpp" />
+    <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="spawncontroller.cpp" />
+    <ClCompile Include="Shooting_System.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="virus.cpp" />
+    <ClCompile Include="Polio.cpp" />
+    <ClCompile Include="events.cpp" />
+    <ClCompile Include="pausescreen.cpp" />
+    <ClCompile Include="platelets.cpp" />
+    <ClCompile Include="levelselector.cpp" />
+    <ClCompile Include="paracetemol.cpp" />
+    <ClCompile Include="vaccine.cpp" />
+    <ClCompile Include="gamestatemanager.cpp" />
+    <ClCompile Include="setting.cpp" />
+    <ClCompile Include="guidepage.cpp" />
+    <ClCompile Include="virulencemeter.cpp" />
+    <ClCompile Include="level.cpp" />
+    <ClCompile Include="bgmusic.cpp" />
+    <ClCompile Include="game_setting.cpp" />
+    <ClCompile Include="credits.cpp" />
+    <ClCompile Include="spritesheets.cpp" />
+    <ClCompile Include="confirmquit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="circle.h" />
+    <ClInclude Include="pathing.h" />
+    <ClInclude Include="pipagao.h" />
+    <ClInclude Include="towers.h" />
+    <ClInclude Include="countdown.h" />
+    <ClInclude Include="rectangle.h" />
+    <ClInclude Include="squaregrid.h" />
+    <ClInclude Include="textureselect.h" />
+    <ClInclude Include="upgradetree.h" />
+    <ClInclude Include="healthbar.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="spawncontroller.h" />
+    <ClInclude Include="Shooting_System.h" />
+    <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="virus.h" />
+    <ClInclude Include="Polio.h" />
+    <ClInclude Include="level.h" />
+    <ClInclude Include="events.h" />
+    <ClInclude Include="pausescreen.h" />
+    <ClInclude Include="platelets.h" />
+    <ClCompile Include="level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="circle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="squaregrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="countdown.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="levelselector.h" />
+    <ClInclude Include="paracetemol.h" />
+    <ClInclude Include="vaccine.h" />
+    <ClInclude Include="collision.h" />
+    <ClInclude Include="gamestatemanager.h" />
+    <ClInclude Include="setting.h" />
+    <ClInclude Include="guidepage.h" />
+    <ClInclude Include="virulencemeter.h" />
+    <ClInclude Include="bgmusic.h" />
+    <ClInclude Include="game_setting.h" />
+    <ClInclude Include="credits.h" />
+    <ClInclude Include="spritesheets.h" />
+    <ClInclude Include="confirmquit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="circle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="squaregrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="countdown.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+{
+    "red_color": "0xFFA52A2A",
+    "white_color": "0xFFFFFFFF",
+
+    "json_exit_button_size": 100.0,
+    "json_audio_bar_width": 400.0,
+    "json_audio_bar_height": 25.0,
+    "json_toggle_bar_width": 25.0,
+    "json_toggle_bar_height": 50.0,
+    "dimension_modifer": 2.0,
+    "width_offset": 3.5,
+    "height_offset": 3,
+    "music_volume": "music volume",
+    "music_pitch": "music pitch",
+    "name_offset": 0.1
+}
+
+
+
+

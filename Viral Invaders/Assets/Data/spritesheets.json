@@ -1,0 +1,28 @@
+{
+    "ss_rows": 3,
+    "ss_cols": 3,
+    "max_sprite": 9,
+    "width": 0.33333,
+    "height": 0.33333,
+    "animation_timer": 0.0,
+    "duration_ea_frame": 0.1,
+    "cur_index": 0,
+    "cur_uv_x": 0.0,
+    "cur_uv_y": 0.0,
+    "scale_x": 400.0,
+    "scale_y": 400.0,
+    "translation_x": 500.0,
+    "translation_y": -200.0,
+
+    "coor_min": -0.5,
+    "coor_max": 0.5,
+    "uv_min": 0.0,
+    "uv_max": 1.0,
+    "color": "0xFFFFFFFF"
+
+
+}
+
+
+
+  

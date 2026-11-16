@@ -1,0 +1,38 @@
+
+{
+    "bg_color": 4278190080,
+    "button_color": 4294901760,
+    "bg_Width":1600.0,
+    "bg_Height": 900.0,
+    "button_x": -635.0,
+    "button_y": -345.0,
+    "button_width": 200.0,
+    "button_height": 80.0,
+    "credits_font_scale": 1.0,
+    "Credits_Page": 1,
+    "x_Pos": -0.4,
+    "y_Pos": 0.8,
+
+
+    "rights_reserve_1": "All content @ 2024 DigiPen Institute of Technology Singapore.",
+    "rights_reserve_2": "All Rights Reserved",
+    "team_name": "TEAM CODE CRUSADERS",
+    "credits_title": "CREDITS",
+    "instructors_title": "INSTRUCTORS",
+    "instructor_1": "CHENG DING XIANG",
+    "instructor_2": "GERALD WONG",
+    "instructor_3": "SOROOR MALEKMOHMMADI",
+    "instructor_4": "TOMMY TAN",
+    "created_at": "CREATED AT",
+    "institute": "DigiPen Institute of Technology Singapore",
+    "president_title": "PRESIDENT",
+    "president_name": "CLAUDE COMAIR",
+    "executives_title": "EXECUTIVES",
+    "executives_1": "JASON CHU  MICHELE COMAIR  CHRISTOPHER COMAIR  ALEXANDER COMAIR  MICHAEL GATS",
+    "executives_2": "TAN CHEK  MING PRASANNA GHALI  MANDY WONG  JOHNNY DEEK",
+    "music_credit": "Music - Jingles BY sounddraw.io",
+    "ui_credit": "UI PACK - kenney_ui - pack pixel adventure",
+    "font_credit": "FONTS - kenney_fonts, Digipen Resources",
+    "next_text": "NEXT",
+    "exit_text": "EXIT"
+  }

@@ -1,0 +1,25 @@
+{
+  "button_left_coor" :  0.0,
+  "screen_width_scale": 200.0,
+  "screen_height_scale": 150.0,
+  "button_y_offset": 250,
+  "space": 40.0,
+  "srect_width_scale": 0.3,
+  "srect_height_scale": 0.08,
+  "button_text": [ "Resume Level", "Restart Level", "Settings", "Main Menu", "Player Guide", "Quit Game" ],
+  "game_pause": "Game Paused",
+  "game_pause_height": 0.7,
+  "bg_color": "0xFF69A2C2",
+  "button_color": "0xFFF9F7DC",
+  "scale": 1.0,
+  "text_scale": 0.8,
+  "text_offset_scale": 1.5,
+  "text_offset_y": 10.0,
+  "color": 0.0,
+  "alpha": 1.0,
+  "bg_texture_file": "Assets/pausebg.png",
+  "texture_offset": 0.0,
+  "button_num": 6,
+  "half": 2
+}
+

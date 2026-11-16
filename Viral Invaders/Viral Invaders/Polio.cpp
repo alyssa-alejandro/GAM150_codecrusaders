@@ -1,0 +1,152 @@
+/******************************************************************************
+* All content © 2025 DigiPen Institute of Technology Singapore. All rights reserved.
+*
+*@filename      Polio.cpp
+*@author        Ang Yu Xuan (Primary Author, 100%)
+*@DP emails     yuxuan.ang@digipen.edu
+*@course        Software Engineering Project 2
+*@teamname      Code Crusaders
+*@gamename      Viral Invaders
+*@brief:        This file is used to create polio's behaviour in the game when
+*               it is spawned by the player.
+******************************************************************************/
+
+#include "Polio.h"
+#include "virus.h"
+#include "spawncontroller.h"
+#include <vector>
+#include <sstream>  // For std::stringstream
+#include "AEEngine.h"
+#include "circle.h"
+#include "level.h"
+#include "rectangle.h"
+#include "textureselect.h"
+#include <iostream>
+
+#include "document.h"
+#include "istreamwrapper.h"
+
+std::vector<virus*> spawned_Viruses; //vector that holds pointers to virus objects.
+AEGfxVertexList* resource_mesh{}; //used to create meshes to render game resources later
+AEMtx33 resource_transform;
+
+static float polio_virus_initial_spawn_time_interval;
+static float polio_virus_initial_generate_time_interval;
+static float polio_virus_spawn_time_rate;
+static float polio_virus_generate_time_rate;
+static float polio_virus_lose_hp_for_spawning;
+static float minion_polio_virus_generate_time_rate;
+static float minion_polio_virus_initial_generate_time_interval;
+
+static float resource_mesh_size;
+u32 resource_mesh_color;
+static float resource_mesh_scale;
+static float resource_mesh_pos_X;
+static float resource_mesh_pos_Y;
+static float resource_text_scale;
+static float resource_text_X_offset;
+static float resource_text_Y_offset;
+static float resource_text_RGBA;
+
+void polio_load_json_data() {
+	std::ifstream fs("Assets/Data/Polio.json");
+	if (!fs) { //cannot open this json file
+		gGameRunning = NULL;
+		return;
+	}
+
+	rapidjson::IStreamWrapper isw(fs);
+	rapidjson::Document doc;
+	doc.ParseStream(isw);
+
+	if (doc.HasParseError()) {
+		gGameRunning = NULL;
+		return; // Exit the function on parse error
+	}
+
+	// Assigning data from json file to init variable in this function
+	polio_virus_initial_spawn_time_interval = doc["polio_virus_initial_spawn_time_interval"].GetFloat();
+	polio_virus_initial_generate_time_interval = doc["polio_virus_initial_generate_time_interval"].GetFloat();
+	polio_virus_spawn_time_rate	= doc["polio_virus_spawn_time_rate"].GetFloat();
+	polio_virus_generate_time_rate = doc["polio_virus_generate_time_rate"].GetFloat();
+	polio_virus_lose_hp_for_spawning = doc["polio_virus_lose_hp_for_spawning"].GetFloat();
+	minion_polio_virus_generate_time_rate = doc["minion_polio_virus_generate_time_rate"].GetFloat();
+	minion_polio_virus_initial_generate_time_interval = doc["minion_polio_virus_initial_generate_time_interval"].GetFloat();
+
+	resource_mesh_size = doc["resource_mesh_size"].GetFloat();
+	sscanf_s(doc["resource_mesh_color"].GetString(), "%x", &resource_mesh_color);
+	resource_mesh_scale = doc["resource_mesh_scale"].GetFloat();
+	resource_mesh_pos_X = doc["resource_mesh_pos_X"].GetFloat();
+	resource_mesh_pos_Y = doc["resource_mesh_pos_Y"].GetFloat();
+	resource_text_scale = doc["resource_text_scale"].GetFloat();
+	resource_text_X_offset = doc["resource_text_X_offset"].GetFloat();
+	resource_text_Y_offset = doc["resource_text_Y_offset"].GetFloat();
+	resource_text_RGBA = doc["resource_text_RGBA"].GetFloat();
+}
+
+//the function handles all the properties for polio's behaviour
+void Polio_Behaviour(virus* polio_behaviour, f64 dt, int* num_resource)
+{
+		polio_behaviour->polio_virus.spawn_time_interval -= polio_virus_spawn_time_rate * static_cast<float>(dt); //start countdown for time interval for spawning minion polio
+		polio_behaviour->polio_virus.generate_time_interval -= polio_virus_generate_time_rate * static_cast<float>(dt); //start countdown for time interval for generate resource
+
+		//Polio spawn minion polio IF countdown timer==0 AND Polio's health is enough to spawn minion polio
+		if (polio_behaviour->polio_virus.spawn_time_interval <= NULL && polio_behaviour->currenthp > polio_virus_lose_hp_for_spawning) {
+			polio_behaviour->currenthp -= static_cast<int>(polio_virus_lose_hp_for_spawning); //health penalty for spawning minion polio
+			polio_behaviour->polio_virus.spawn_time_interval = polio_virus_initial_spawn_time_interval;//reset back countdown timer for spawning minion polio
+			
+			//call function to spawn one minion polio 
+			Auto_spawner(polio_behaviour->x, polio_behaviour->y, spawned_Viruses);
+		}
+
+		//Polio generate gameplay resource IF countdown timer==0
+		if (polio_behaviour->polio_virus.generate_time_interval <= NULL) {
+			polio_behaviour->polio_virus.generate_time_interval = polio_virus_initial_generate_time_interval;//reset back the countdown timer for generate gameplay resource
+			//current player's gameplay resource + amount of gameplay resource generated by polio
+			*num_resource += polio_behaviour->polio_virus.generate_resource;
+		}
+}
+
+//the function handles all the properties for minion polio's behaviour
+void Minion_Polio_Behaviour(virus* minion_polio_behaviour, f64 dt, int* num_resource)
+{
+	minion_polio_behaviour->minion_polio_virus.generate_time_interval -= minion_polio_virus_generate_time_rate * static_cast<float>(dt); //start countdown for time interval for generate gameplay resource
+
+	//minion polio generate gameplay resource IF countdown timer==0
+	if (minion_polio_behaviour->minion_polio_virus.generate_time_interval <= NULL) {
+		minion_polio_behaviour->minion_polio_virus.generate_time_interval = minion_polio_virus_initial_generate_time_interval;//reset back the countdown timer for generate gameplay resource
+		//current player's gameplay resource + amount of gameplay resource generated by minion polio
+		*num_resource += minion_polio_behaviour->minion_polio_virus.generate_resource;
+	}
+}
+
+void resourceinit() {
+	Create_Rectangle(&resource_mesh, resource_mesh_size, resource_mesh_size, resource_mesh_color, &resource_transform, 
+		resource_mesh_scale, resource_mesh_scale, resource_mesh_pos_X, resource_mesh_pos_Y);
+}
+
+//This function is used to display gameplay resource
+void display_playGAME_resource(s8 loaded_font, int num_resources) {
+	// Text to print
+	std::stringstream resource_text; //Build the string using stringstream
+	AEGfxSetTransform(resource_transform.m);
+	AEGfxTextureSet(dna, {}, {});
+	AEGfxMeshDraw(resource_mesh, AE_GFX_MDM_TRIANGLES);
+	resource_text << num_resources;
+	std::string render_resource_text = resource_text.str(); // Convert to std::string
+
+	const char* pText_Resource = render_resource_text.c_str(); // Convert to const char*
+	f32 w1, h1;
+	AEGfxGetPrintSize(loaded_font, pText_Resource, resource_text_scale, &w1, &h1);
+	//determine where we want to print the text to show player's current gameplay resources
+	AEGfxPrint(loaded_font, pText_Resource, resource_text_X_offset - w1 / 2.0f, resource_text_Y_offset - h1 / 2.0f, 
+		resource_text_scale, resource_text_RGBA, {}, {}, resource_text_RGBA);
+
+}
+
+void free_resource() {
+	if (resource_mesh) {
+		AEGfxMeshFree(resource_mesh);
+		resource_mesh = nullptr;
+	}
+}
